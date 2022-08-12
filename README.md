@@ -7,7 +7,8 @@
 
 
 ### Step 1 : Download zookeeper from the below URL.
-http://bit.ly/2sDWSgJ
+https://zookeeper.apache.org/releases.html
+
 
 
 ### Step 2 : unzip jar
