@@ -69,7 +69,8 @@ The ID number of the server. This must be an integer, but it does not need to be
 ## Install broker
 
 ### Step 1 : Download kafka broker from the below URL.
-[https://zookeeper.apache.org/releases.html](https://kafka.apache.org/downloads.html)
+https://kafka.apache.org/downloads.html
+
 
 
 ### Step 2 : unzip jar and move broker to local user
