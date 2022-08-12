@@ -81,11 +81,19 @@ mv kafka_2.X-0.9.0.1 /usr/local/kafka
 
 ### Step 3 : configure kafka broker
 
-vi /usr/local/zookeeper/conf/zoo.cfg  
+vi /usr/local/kafka/config/server.properties
 ```
-tickTime=2000
-dataDir=/var/lib/zookeeper
-clientPort=2181
+#The most important thing is that the integer must be unique within a single Kafka cluster.
+broker.id=host1.example.com #this integer is set to 0, b
+
+#if a port lower than 1024 is chosen, Kafka must be started as root. Running Kafka as root is not a recommended configuration.
+port=8791
+
+zookeeper.connect=localhost:2181
+
+log.dirs=/User/hem/Desktop/kafka/
+
+
 ```
 
 ### Step 4 : Start kafka broker
