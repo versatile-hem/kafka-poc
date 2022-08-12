@@ -104,9 +104,9 @@ log.dirs=/User/hem/Desktop/kafka/
 
 Create and verify a topic:
 ```
-#/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181
 
---replication-factor 1 --partitions 1 --topic test Created topic "test".
+##Newer versions(2.2 and above) of Kafka no longer require ZooKeeper connection string ie --zookeeper localhost:2181 and throw Exception in thread "main".
+#/usr/local/kafka/bin/kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 
 #/usr/local/kafka/bin/kafka-topics.sh --zookeeper localhost:2181
 
